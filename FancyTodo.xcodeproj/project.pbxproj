@@ -13,6 +13,9 @@
 		A5E93E93269746D800ED47CC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5E93E92269746D800ED47CC /* Preview Assets.xcassets */; };
 		A5E93E9E269746D800ED47CC /* FancyTodoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E93E9D269746D800ED47CC /* FancyTodoTests.swift */; };
 		A5E93EA9269746D800ED47CC /* FancyTodoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E93EA8269746D800ED47CC /* FancyTodoUITests.swift */; };
+		A5E93EBA26974AF400ED47CC /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E93EB926974AF400ED47CC /* Todo.swift */; };
+		A5E93EBC26974E8700ED47CC /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E93EBB26974E8700ED47CC /* List.swift */; };
+		A5E93EBE26974EF700ED47CC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E93EBD26974EF700ED47CC /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +48,9 @@
 		A5E93EA4269746D800ED47CC /* FancyTodoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FancyTodoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5E93EA8269746D800ED47CC /* FancyTodoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyTodoUITests.swift; sourceTree = "<group>"; };
 		A5E93EAA269746D800ED47CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5E93EB926974AF400ED47CC /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
+		A5E93EBB26974E8700ED47CC /* List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
+		A5E93EBD26974EF700ED47CC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +101,9 @@
 		A5E93E8A269746D600ED47CC /* FancyTodo */ = {
 			isa = PBXGroup;
 			children = (
+				A5E93EB826974AD000ED47CC /* Views */,
+				A5E93EB726974AC100ED47CC /* Resources */,
+				A5E93EB626974ABA00ED47CC /* Models */,
 				A5E93E8B269746D600ED47CC /* FancyTodoApp.swift */,
 				A5E93E8D269746D600ED47CC /* ContentView.swift */,
 				A5E93E8F269746D800ED47CC /* Assets.xcassets */,
@@ -128,6 +137,30 @@
 				A5E93EAA269746D800ED47CC /* Info.plist */,
 			);
 			path = FancyTodoUITests;
+			sourceTree = "<group>";
+		};
+		A5E93EB626974ABA00ED47CC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A5E93EB926974AF400ED47CC /* Todo.swift */,
+				A5E93EBB26974E8700ED47CC /* List.swift */,
+				A5E93EBD26974EF700ED47CC /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A5E93EB726974AC100ED47CC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A5E93EB826974AD000ED47CC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +293,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5E93E8E269746D600ED47CC /* ContentView.swift in Sources */,
+				A5E93EBC26974E8700ED47CC /* List.swift in Sources */,
+				A5E93EBA26974AF400ED47CC /* Todo.swift in Sources */,
+				A5E93EBE26974EF700ED47CC /* User.swift in Sources */,
 				A5E93E8C269746D600ED47CC /* FancyTodoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -427,7 +463,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = sundayx.FancyTodo;
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = sundayx.fancytodo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -449,7 +486,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = sundayx.FancyTodo;
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = sundayx.fancytodo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
