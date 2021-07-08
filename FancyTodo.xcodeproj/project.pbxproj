@@ -16,6 +16,7 @@
 		A5E93EBA26974AF400ED47CC /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E93EB926974AF400ED47CC /* Todo.swift */; };
 		A5E93EBC26974E8700ED47CC /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E93EBB26974E8700ED47CC /* List.swift */; };
 		A5E93EBE26974EF700ED47CC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E93EBD26974EF700ED47CC /* User.swift */; };
+		A5E93EC1269750AA00ED47CC /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E93EC0269750AA00ED47CC /* SignIn.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		A5E93EB926974AF400ED47CC /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
 		A5E93EBB26974E8700ED47CC /* List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
 		A5E93EBD26974EF700ED47CC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A5E93EC0269750AA00ED47CC /* SignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,8 +161,17 @@
 		A5E93EB826974AD000ED47CC /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A5E93EBF2697507E00ED47CC /* Auth */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		A5E93EBF2697507E00ED47CC /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				A5E93EC0269750AA00ED47CC /* SignIn.swift */,
+			);
+			path = Auth;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,6 +304,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5E93E8E269746D600ED47CC /* ContentView.swift in Sources */,
+				A5E93EC1269750AA00ED47CC /* SignIn.swift in Sources */,
 				A5E93EBC26974E8700ED47CC /* List.swift in Sources */,
 				A5E93EBA26974AF400ED47CC /* Todo.swift in Sources */,
 				A5E93EBE26974EF700ED47CC /* User.swift in Sources */,
@@ -464,7 +476,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = sundayx.fancytodo;
+				PRODUCT_BUNDLE_IDENTIFIER = sundayexplore.fancytodo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -487,7 +499,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = sundayx.fancytodo;
+				PRODUCT_BUNDLE_IDENTIFIER = sundayexplore.fancytodo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
