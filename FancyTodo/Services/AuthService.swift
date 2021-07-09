@@ -25,7 +25,7 @@ struct SignInResponseBody: Codable {
 }
 
 class AuthService {
-    func signIn(email: String, password: String, completion: @escaping (Result<String, AuthenticationError>) -> Void) {
+    func signIn(email: String, password: String, completion: @escaping (Result<SignInResponseBody, AuthenticationError>) -> Void) {
         guard let url = URL(string: "http://localhost:3010/api/v1/auth/signin") else {
             completion(.failure(.custom(message: "Invalid URL!")))
             return
@@ -44,17 +44,13 @@ class AuthService {
                 return
             }
             
-            guard let res = try? JSONDecoder().decode(SignInResponseBody.self, from: data) else {
+            
+            guard let data = try? JSONDecoder().decode(SignInResponseBody.self, from: data) else {
                 completion(.failure(.invalidCredentials))
                 return
             }
             
-            guard let act = res.act else {
-                completion(.failure(.invalidCredentials))
-                return
-            }
-            
-            completion(.success(act))
+            completion(.success(data))
         }
         .resume()
     }
