@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		42F2D2288CE442B57B48BB62 /* Pods_FancyTodo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 932CB0AB1A3BCBBC160C1ABE /* Pods_FancyTodo.framework */; };
 		598A39A30F7E48DE08949565 /* Pods_FancyTodo_FancyTodoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E37EC6FA0B7730B4B418262E /* Pods_FancyTodo_FancyTodoUITests.framework */; };
 		7E7AA47EE79240D7E926A4C3 /* Pods_FancyTodoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 062BC8C60D6D1CEB3B2307AD /* Pods_FancyTodoTests.framework */; };
 		A57CB7522697E2420014C07E /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57CB7512697E2420014C07E /* AuthService.swift */; };
@@ -77,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42F2D2288CE442B57B48BB62 /* Pods_FancyTodo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -623,7 +625,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = sundayexplore.fancytodo;
+				PRODUCT_BUNDLE_IDENTIFIER = sundayx.fancytodo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -648,7 +650,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = sundayexplore.fancytodo;
+				PRODUCT_BUNDLE_IDENTIFIER = sundayx.fancytodo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

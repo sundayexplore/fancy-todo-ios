@@ -10,8 +10,25 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         NavigationView {
-            NavigationLink(destination: SignInView()) {
-                Text("SIGN IN")
+            VStack(alignment: .center, spacing: 200) {
+                Text("Fancy Todo")
+                    .bold()
+                    .font(.largeTitle)
+                
+                VStack {
+                    NavigationLink(destination: SignInView()) {
+                        HStack {
+                            Image(systemName: "envelope")
+                                .font(.callout)
+                            Text("Continue with email")
+                                .fontWeight(.semibold)
+                                .font(.callout)
+                        }
+                        .foregroundColor(Color.black)
+                        .padding()
+                        .border(Color.black, width: 2)
+                    }
+                }
             }
         }
     }
