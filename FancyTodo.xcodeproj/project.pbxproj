@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		598A39A30F7E48DE08949565 /* Pods_FancyTodo_FancyTodoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E37EC6FA0B7730B4B418262E /* Pods_FancyTodo_FancyTodoUITests.framework */; };
+		7E7AA47EE79240D7E926A4C3 /* Pods_FancyTodoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 062BC8C60D6D1CEB3B2307AD /* Pods_FancyTodoTests.framework */; };
 		A57CB7522697E2420014C07E /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57CB7512697E2420014C07E /* AuthService.swift */; };
 		A57CB758269804220014C07E /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57CB757269804220014C07E /* CustomTextField.swift */; };
 		A57CB75B26980CEB0014C07E /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57CB75A26980CEB0014C07E /* SignInViewModel.swift */; };
@@ -40,6 +42,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		062BC8C60D6D1CEB3B2307AD /* Pods_FancyTodoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FancyTodoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EDC6111D916B608D64A83F0 /* Pods-FancyTodo-FancyTodoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FancyTodo-FancyTodoUITests.debug.xcconfig"; path = "Target Support Files/Pods-FancyTodo-FancyTodoUITests/Pods-FancyTodo-FancyTodoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		932CB0AB1A3BCBBC160C1ABE /* Pods_FancyTodo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FancyTodo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A57CB7512697E2420014C07E /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		A57CB757269804220014C07E /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		A57CB75A26980CEB0014C07E /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
@@ -59,6 +64,12 @@
 		A5E93EBB26974E8700ED47CC /* List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
 		A5E93EBD26974EF700ED47CC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		A5E93EC0269750AA00ED47CC /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		B2B3F8ECFC294052354FC82C /* Pods-FancyTodoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FancyTodoTests.debug.xcconfig"; path = "Target Support Files/Pods-FancyTodoTests/Pods-FancyTodoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CE229572C0E905056B574CDF /* Pods-FancyTodoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FancyTodoTests.release.xcconfig"; path = "Target Support Files/Pods-FancyTodoTests/Pods-FancyTodoTests.release.xcconfig"; sourceTree = "<group>"; };
+		E37EC6FA0B7730B4B418262E /* Pods_FancyTodo_FancyTodoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FancyTodo_FancyTodoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E39E4BC0A082F8BB21B3FEA1 /* Pods-FancyTodo-FancyTodoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FancyTodo-FancyTodoUITests.release.xcconfig"; path = "Target Support Files/Pods-FancyTodo-FancyTodoUITests/Pods-FancyTodo-FancyTodoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E4C94B658AB3603EEF7773B2 /* Pods-FancyTodo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FancyTodo.release.xcconfig"; path = "Target Support Files/Pods-FancyTodo/Pods-FancyTodo.release.xcconfig"; sourceTree = "<group>"; };
+		F40E4D17604D2EF0A893AF7F /* Pods-FancyTodo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FancyTodo.debug.xcconfig"; path = "Target Support Files/Pods-FancyTodo/Pods-FancyTodo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E7AA47EE79240D7E926A4C3 /* Pods_FancyTodoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,12 +92,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				598A39A30F7E48DE08949565 /* Pods_FancyTodo_FancyTodoUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		35832B030F8944999B2632B4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				932CB0AB1A3BCBBC160C1ABE /* Pods_FancyTodo.framework */,
+				E37EC6FA0B7730B4B418262E /* Pods_FancyTodo_FancyTodoUITests.framework */,
+				062BC8C60D6D1CEB3B2307AD /* Pods_FancyTodoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		44E083872CCC581AEE43429B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F40E4D17604D2EF0A893AF7F /* Pods-FancyTodo.debug.xcconfig */,
+				E4C94B658AB3603EEF7773B2 /* Pods-FancyTodo.release.xcconfig */,
+				7EDC6111D916B608D64A83F0 /* Pods-FancyTodo-FancyTodoUITests.debug.xcconfig */,
+				E39E4BC0A082F8BB21B3FEA1 /* Pods-FancyTodo-FancyTodoUITests.release.xcconfig */,
+				B2B3F8ECFC294052354FC82C /* Pods-FancyTodoTests.debug.xcconfig */,
+				CE229572C0E905056B574CDF /* Pods-FancyTodoTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		A57CB7502697E2310014C07E /* Services */ = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +153,8 @@
 				A5E93E9C269746D800ED47CC /* FancyTodoTests */,
 				A5E93EA7269746D800ED47CC /* FancyTodoUITests */,
 				A5E93E89269746D600ED47CC /* Products */,
+				44E083872CCC581AEE43429B /* Pods */,
+				35832B030F8944999B2632B4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -214,6 +252,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A5E93EAD269746D800ED47CC /* Build configuration list for PBXNativeTarget "FancyTodo" */;
 			buildPhases = (
+				B086DCA3C76F5D6114AA4DFD /* [CP] Check Pods Manifest.lock */,
 				A5E93E84269746D600ED47CC /* Sources */,
 				A5E93E85269746D600ED47CC /* Frameworks */,
 				A5E93E86269746D600ED47CC /* Resources */,
@@ -231,6 +270,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A5E93EB0269746D800ED47CC /* Build configuration list for PBXNativeTarget "FancyTodoTests" */;
 			buildPhases = (
+				A322CAAE030D06E79701901B /* [CP] Check Pods Manifest.lock */,
 				A5E93E95269746D800ED47CC /* Sources */,
 				A5E93E96269746D800ED47CC /* Frameworks */,
 				A5E93E97269746D800ED47CC /* Resources */,
@@ -249,6 +289,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A5E93EB3269746D800ED47CC /* Build configuration list for PBXNativeTarget "FancyTodoUITests" */;
 			buildPhases = (
+				305030F0D9F9D871E72D5653 /* [CP] Check Pods Manifest.lock */,
 				A5E93EA0269746D800ED47CC /* Sources */,
 				A5E93EA1269746D800ED47CC /* Frameworks */,
 				A5E93EA2269746D800ED47CC /* Resources */,
@@ -330,6 +371,75 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		305030F0D9F9D871E72D5653 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FancyTodo-FancyTodoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A322CAAE030D06E79701901B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FancyTodoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B086DCA3C76F5D6114AA4DFD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FancyTodo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A5E93E84269746D600ED47CC /* Sources */ = {
@@ -498,6 +608,7 @@
 		};
 		A5E93EAE269746D800ED47CC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F40E4D17604D2EF0A893AF7F /* Pods-FancyTodo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -516,11 +627,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_WORKSPACE = YES;
 			};
 			name = Debug;
 		};
 		A5E93EAF269746D800ED47CC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4C94B658AB3603EEF7773B2 /* Pods-FancyTodo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -539,11 +652,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_WORKSPACE = YES;
 			};
 			name = Release;
 		};
 		A5E93EB1269746D800ED47CC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2B3F8ECFC294052354FC82C /* Pods-FancyTodoTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -566,6 +681,7 @@
 		};
 		A5E93EB2269746D800ED47CC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE229572C0E905056B574CDF /* Pods-FancyTodoTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -588,6 +704,7 @@
 		};
 		A5E93EB4269746D800ED47CC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EDC6111D916B608D64A83F0 /* Pods-FancyTodo-FancyTodoUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -608,6 +725,7 @@
 		};
 		A5E93EB5269746D800ED47CC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E39E4BC0A082F8BB21B3FEA1 /* Pods-FancyTodo-FancyTodoUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
