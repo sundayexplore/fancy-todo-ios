@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A57CB7522697E2420014C07E /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57CB7512697E2420014C07E /* AuthService.swift */; };
+		A57CB758269804220014C07E /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57CB757269804220014C07E /* CustomTextField.swift */; };
 		A5E93E8C269746D600ED47CC /* FancyTodoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E93E8B269746D600ED47CC /* FancyTodoApp.swift */; };
 		A5E93E8E269746D600ED47CC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E93E8D269746D600ED47CC /* ContentView.swift */; };
 		A5E93E90269746D800ED47CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5E93E8F269746D800ED47CC /* Assets.xcassets */; };
@@ -16,7 +18,7 @@
 		A5E93EBA26974AF400ED47CC /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E93EB926974AF400ED47CC /* Todo.swift */; };
 		A5E93EBC26974E8700ED47CC /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E93EBB26974E8700ED47CC /* List.swift */; };
 		A5E93EBE26974EF700ED47CC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E93EBD26974EF700ED47CC /* User.swift */; };
-		A5E93EC1269750AA00ED47CC /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E93EC0269750AA00ED47CC /* SignIn.swift */; };
+		A5E93EC1269750AA00ED47CC /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E93EC0269750AA00ED47CC /* SignInView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A57CB7512697E2420014C07E /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		A57CB757269804220014C07E /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		A5E93E88269746D600ED47CC /* FancyTodo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FancyTodo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5E93E8B269746D600ED47CC /* FancyTodoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyTodoApp.swift; sourceTree = "<group>"; };
 		A5E93E8D269746D600ED47CC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -52,7 +56,7 @@
 		A5E93EB926974AF400ED47CC /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
 		A5E93EBB26974E8700ED47CC /* List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
 		A5E93EBD26974EF700ED47CC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		A5E93EC0269750AA00ED47CC /* SignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
+		A5E93EC0269750AA00ED47CC /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A57CB7502697E2310014C07E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A57CB7512697E2420014C07E /* AuthService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A57CB7562698040C0014C07E /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				A57CB757269804220014C07E /* CustomTextField.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		A5E93E7F269746D500ED47CC = {
 			isa = PBXGroup;
 			children = (
@@ -103,11 +123,12 @@
 		A5E93E8A269746D600ED47CC /* FancyTodo */ = {
 			isa = PBXGroup;
 			children = (
+				A57CB7562698040C0014C07E /* Components */,
+				A57CB7502697E2310014C07E /* Services */,
 				A5E93EB826974AD000ED47CC /* Views */,
 				A5E93EB726974AC100ED47CC /* Resources */,
 				A5E93EB626974ABA00ED47CC /* Models */,
 				A5E93E8B269746D600ED47CC /* FancyTodoApp.swift */,
-				A5E93E8D269746D600ED47CC /* ContentView.swift */,
 				A5E93E8F269746D800ED47CC /* Assets.xcassets */,
 				A5E93E94269746D800ED47CC /* Info.plist */,
 				A5E93E91269746D800ED47CC /* Preview Content */,
@@ -161,6 +182,7 @@
 		A5E93EB826974AD000ED47CC /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A5E93E8D269746D600ED47CC /* ContentView.swift */,
 				A5E93EBF2697507E00ED47CC /* Auth */,
 			);
 			path = Views;
@@ -169,7 +191,7 @@
 		A5E93EBF2697507E00ED47CC /* Auth */ = {
 			isa = PBXGroup;
 			children = (
-				A5E93EC0269750AA00ED47CC /* SignIn.swift */,
+				A5E93EC0269750AA00ED47CC /* SignInView.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -304,11 +326,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5E93E8E269746D600ED47CC /* ContentView.swift in Sources */,
-				A5E93EC1269750AA00ED47CC /* SignIn.swift in Sources */,
+				A5E93EC1269750AA00ED47CC /* SignInView.swift in Sources */,
+				A57CB7522697E2420014C07E /* AuthService.swift in Sources */,
 				A5E93EBC26974E8700ED47CC /* List.swift in Sources */,
 				A5E93EBA26974AF400ED47CC /* Todo.swift in Sources */,
 				A5E93EBE26974EF700ED47CC /* User.swift in Sources */,
 				A5E93E8C269746D600ED47CC /* FancyTodoApp.swift in Sources */,
+				A57CB758269804220014C07E /* CustomTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
