@@ -1,23 +1,24 @@
 //
-//  SignIn.swift
+//  SignUpView.swift
 //  FancyTodo
 //
-//  Created by Adam Rafiandri on 7/8/21.
+//  Created by Adam Rafiandri on 7/10/21.
 //
 
 import SwiftUI
 
-struct SignInView: View {
+struct SignUpView: View {
     @EnvironmentObject private var authVM: AuthViewModel
-    @State private var email: String = ""
+    @State private var name: String = ""
+    @State private var email: String  = ""
     @State private var password: String = ""
-    @State private var focusable: [Bool] = [false, false]
+    @State private var focusable: [Bool] = [false, false, false]
     @State private var isSecureTextEntry: Bool = true
     
-    func signIn() {
+    func signUp() {
         let defaults = UserDefaults.standard
         
-        AuthService().signIn(email: email, password: password) { result in
+        AuthService().signUp(name: name, email: email, password: password) { result in
             switch result {
             case .success(let data):
                 defaults.setValue(data.act, forKey: "act")
@@ -56,19 +57,18 @@ struct SignInView: View {
                     .frame(height: 48)
                     
                     Button("Continue") {
-                        signIn()
+                        signUp()
                     }
                 }
             }
         }
-        .navigationTitle("Sign in")
+        .navigationTitle("Sign up")
     }
 }
 
-struct SignIn_Previews: PreviewProvider {
+struct SignUpView_Previews: PreviewProvider {
     static var previews: some View {
-        SignInView()
+        SignUpView()
             .environmentObject(AuthViewModel())
     }
 }
-

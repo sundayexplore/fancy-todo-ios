@@ -8,28 +8,31 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        NavigationView {
-            VStack(alignment: .center, spacing: 200) {
-                Text("Fancy Todo")
-                    .bold()
-                    .font(.largeTitle)
+    @EnvironmentObject private var authVM: AuthViewModel
+    
+    func sync() {
+        AuthService().sync() { result in
+            switch result {
+            case .success(let data):
+                authVM.user = data.user
                 
-                VStack {
-                    NavigationLink(destination: SignInView()) {
-                        HStack {
-                            Image(systemName: "envelope")
-                                .font(.callout)
-                            Text("Continue with email")
-                                .fontWeight(.semibold)
-                                .font(.callout)
-                        }
-                        .foregroundColor(Color.black)
-                        .padding()
-                        .border(Color.black, width: 2)
-                    }
-                }
+            case .failure(let err):
+                print(err.localizedDescription)
+                authVM.user = nil
             }
+        }
+    }
+    
+    var body: some View {
+        NavigationView{
+            if authVM.user != nil {
+                AppView()
+            } else {
+                AuthView()
+            }
+        }
+        .onAppear {
+            sync()
         }
     }
 }
@@ -37,5 +40,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .environmentObject(AuthViewModel())
     }
 }
