@@ -7,8 +7,8 @@
 
 import Foundation
 
-struct List: Codable, Hashable, Identifiable {
-    var id: String
+struct List: Codable, Hashable {
+    var _id: String
     var userId: String
     var name: String
     var color: String

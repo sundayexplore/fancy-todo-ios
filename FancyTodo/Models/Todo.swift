@@ -7,8 +7,8 @@
 
 import Foundation
 
-struct Todo: Codable, Hashable, Identifiable {
-    var id: String
+struct Todo: Codable, Hashable {
+    var _id: String
     var userId: String
     var listId: String?
     var name: String

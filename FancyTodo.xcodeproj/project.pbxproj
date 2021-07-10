@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		42F2D2288CE442B57B48BB62 /* Pods_FancyTodo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 932CB0AB1A3BCBBC160C1ABE /* Pods_FancyTodo.framework */; };
+		598A39A30F7E48DE08949565 /* Pods_FancyTodo_FancyTodoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E37EC6FA0B7730B4B418262E /* Pods_FancyTodo_FancyTodoUITests.framework */; };
+		7E7AA47EE79240D7E926A4C3 /* Pods_FancyTodoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 062BC8C60D6D1CEB3B2307AD /* Pods_FancyTodoTests.framework */; };
+		A5155F83269A0E80008CEFBC /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5155F82269A0E80008CEFBC /* AuthView.swift */; };
+		A5155F85269A0EB8008CEFBC /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5155F84269A0EB8008CEFBC /* AppView.swift */; };
+		A57CB7522697E2420014C07E /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57CB7512697E2420014C07E /* AuthService.swift */; };
+		A57CB758269804220014C07E /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57CB757269804220014C07E /* CustomTextField.swift */; };
+		A5AC2D25269A00A6009FB73E /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AC2D24269A00A6009FB73E /* AuthViewModel.swift */; };
+		A5AC2D27269A02B9009FB73E /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AC2D26269A02B9009FB73E /* SignUpView.swift */; };
 		A5E93E8C269746D600ED47CC /* FancyTodoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E93E8B269746D600ED47CC /* FancyTodoApp.swift */; };
 		A5E93E8E269746D600ED47CC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E93E8D269746D600ED47CC /* ContentView.swift */; };
 		A5E93E90269746D800ED47CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5E93E8F269746D800ED47CC /* Assets.xcassets */; };
@@ -16,6 +25,7 @@
 		A5E93EBA26974AF400ED47CC /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E93EB926974AF400ED47CC /* Todo.swift */; };
 		A5E93EBC26974E8700ED47CC /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E93EBB26974E8700ED47CC /* List.swift */; };
 		A5E93EBE26974EF700ED47CC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E93EBD26974EF700ED47CC /* User.swift */; };
+		A5E93EC1269750AA00ED47CC /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E93EC0269750AA00ED47CC /* SignInView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +46,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		062BC8C60D6D1CEB3B2307AD /* Pods_FancyTodoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FancyTodoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EDC6111D916B608D64A83F0 /* Pods-FancyTodo-FancyTodoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FancyTodo-FancyTodoUITests.debug.xcconfig"; path = "Target Support Files/Pods-FancyTodo-FancyTodoUITests/Pods-FancyTodo-FancyTodoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		932CB0AB1A3BCBBC160C1ABE /* Pods_FancyTodo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FancyTodo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5155F82269A0E80008CEFBC /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		A5155F84269A0EB8008CEFBC /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
+		A57CB7512697E2420014C07E /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		A57CB757269804220014C07E /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		A5AC2D24269A00A6009FB73E /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		A5AC2D26269A02B9009FB73E /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		A5E93E88269746D600ED47CC /* FancyTodo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FancyTodo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5E93E8B269746D600ED47CC /* FancyTodoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyTodoApp.swift; sourceTree = "<group>"; };
 		A5E93E8D269746D600ED47CC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -51,6 +70,13 @@
 		A5E93EB926974AF400ED47CC /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
 		A5E93EBB26974E8700ED47CC /* List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
 		A5E93EBD26974EF700ED47CC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A5E93EC0269750AA00ED47CC /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		B2B3F8ECFC294052354FC82C /* Pods-FancyTodoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FancyTodoTests.debug.xcconfig"; path = "Target Support Files/Pods-FancyTodoTests/Pods-FancyTodoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CE229572C0E905056B574CDF /* Pods-FancyTodoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FancyTodoTests.release.xcconfig"; path = "Target Support Files/Pods-FancyTodoTests/Pods-FancyTodoTests.release.xcconfig"; sourceTree = "<group>"; };
+		E37EC6FA0B7730B4B418262E /* Pods_FancyTodo_FancyTodoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FancyTodo_FancyTodoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E39E4BC0A082F8BB21B3FEA1 /* Pods-FancyTodo-FancyTodoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FancyTodo-FancyTodoUITests.release.xcconfig"; path = "Target Support Files/Pods-FancyTodo-FancyTodoUITests/Pods-FancyTodo-FancyTodoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E4C94B658AB3603EEF7773B2 /* Pods-FancyTodo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FancyTodo.release.xcconfig"; path = "Target Support Files/Pods-FancyTodo/Pods-FancyTodo.release.xcconfig"; sourceTree = "<group>"; };
+		F40E4D17604D2EF0A893AF7F /* Pods-FancyTodo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FancyTodo.debug.xcconfig"; path = "Target Support Files/Pods-FancyTodo/Pods-FancyTodo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42F2D2288CE442B57B48BB62 /* Pods_FancyTodo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E7AA47EE79240D7E926A4C3 /* Pods_FancyTodoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +100,68 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				598A39A30F7E48DE08949565 /* Pods_FancyTodo_FancyTodoUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		35832B030F8944999B2632B4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				932CB0AB1A3BCBBC160C1ABE /* Pods_FancyTodo.framework */,
+				E37EC6FA0B7730B4B418262E /* Pods_FancyTodo_FancyTodoUITests.framework */,
+				062BC8C60D6D1CEB3B2307AD /* Pods_FancyTodoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		44E083872CCC581AEE43429B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F40E4D17604D2EF0A893AF7F /* Pods-FancyTodo.debug.xcconfig */,
+				E4C94B658AB3603EEF7773B2 /* Pods-FancyTodo.release.xcconfig */,
+				7EDC6111D916B608D64A83F0 /* Pods-FancyTodo-FancyTodoUITests.debug.xcconfig */,
+				E39E4BC0A082F8BB21B3FEA1 /* Pods-FancyTodo-FancyTodoUITests.release.xcconfig */,
+				B2B3F8ECFC294052354FC82C /* Pods-FancyTodoTests.debug.xcconfig */,
+				CE229572C0E905056B574CDF /* Pods-FancyTodoTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A5155F81269A0E70008CEFBC /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A5155F84269A0EB8008CEFBC /* AppView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A57CB7502697E2310014C07E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A57CB7512697E2420014C07E /* AuthService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A57CB7562698040C0014C07E /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				A57CB757269804220014C07E /* CustomTextField.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		A57CB75926980CD60014C07E /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				A5AC2D24269A00A6009FB73E /* AuthViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		A5E93E7F269746D500ED47CC = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +169,8 @@
 				A5E93E9C269746D800ED47CC /* FancyTodoTests */,
 				A5E93EA7269746D800ED47CC /* FancyTodoUITests */,
 				A5E93E89269746D600ED47CC /* Products */,
+				44E083872CCC581AEE43429B /* Pods */,
+				35832B030F8944999B2632B4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,11 +187,13 @@
 		A5E93E8A269746D600ED47CC /* FancyTodo */ = {
 			isa = PBXGroup;
 			children = (
+				A57CB75926980CD60014C07E /* ViewModels */,
+				A57CB7562698040C0014C07E /* Components */,
+				A57CB7502697E2310014C07E /* Services */,
 				A5E93EB826974AD000ED47CC /* Views */,
 				A5E93EB726974AC100ED47CC /* Resources */,
 				A5E93EB626974ABA00ED47CC /* Models */,
 				A5E93E8B269746D600ED47CC /* FancyTodoApp.swift */,
-				A5E93E8D269746D600ED47CC /* ContentView.swift */,
 				A5E93E8F269746D800ED47CC /* Assets.xcassets */,
 				A5E93E94269746D800ED47CC /* Info.plist */,
 				A5E93E91269746D800ED47CC /* Preview Content */,
@@ -159,8 +247,21 @@
 		A5E93EB826974AD000ED47CC /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A5155F81269A0E70008CEFBC /* App */,
+				A5E93E8D269746D600ED47CC /* ContentView.swift */,
+				A5E93EBF2697507E00ED47CC /* Auth */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		A5E93EBF2697507E00ED47CC /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				A5E93EC0269750AA00ED47CC /* SignInView.swift */,
+				A5AC2D26269A02B9009FB73E /* SignUpView.swift */,
+				A5155F82269A0E80008CEFBC /* AuthView.swift */,
+			);
+			path = Auth;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,6 +271,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A5E93EAD269746D800ED47CC /* Build configuration list for PBXNativeTarget "FancyTodo" */;
 			buildPhases = (
+				B086DCA3C76F5D6114AA4DFD /* [CP] Check Pods Manifest.lock */,
 				A5E93E84269746D600ED47CC /* Sources */,
 				A5E93E85269746D600ED47CC /* Frameworks */,
 				A5E93E86269746D600ED47CC /* Resources */,
@@ -187,6 +289,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A5E93EB0269746D800ED47CC /* Build configuration list for PBXNativeTarget "FancyTodoTests" */;
 			buildPhases = (
+				A322CAAE030D06E79701901B /* [CP] Check Pods Manifest.lock */,
 				A5E93E95269746D800ED47CC /* Sources */,
 				A5E93E96269746D800ED47CC /* Frameworks */,
 				A5E93E97269746D800ED47CC /* Resources */,
@@ -205,6 +308,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A5E93EB3269746D800ED47CC /* Build configuration list for PBXNativeTarget "FancyTodoUITests" */;
 			buildPhases = (
+				305030F0D9F9D871E72D5653 /* [CP] Check Pods Manifest.lock */,
 				A5E93EA0269746D800ED47CC /* Sources */,
 				A5E93EA1269746D800ED47CC /* Frameworks */,
 				A5E93EA2269746D800ED47CC /* Resources */,
@@ -287,16 +391,92 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		305030F0D9F9D871E72D5653 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FancyTodo-FancyTodoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A322CAAE030D06E79701901B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FancyTodoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B086DCA3C76F5D6114AA4DFD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FancyTodo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A5E93E84269746D600ED47CC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				A5E93E8E269746D600ED47CC /* ContentView.swift in Sources */,
+				A5E93EC1269750AA00ED47CC /* SignInView.swift in Sources */,
+				A57CB7522697E2420014C07E /* AuthService.swift in Sources */,
 				A5E93EBC26974E8700ED47CC /* List.swift in Sources */,
+				A5AC2D27269A02B9009FB73E /* SignUpView.swift in Sources */,
 				A5E93EBA26974AF400ED47CC /* Todo.swift in Sources */,
+				A5AC2D25269A00A6009FB73E /* AuthViewModel.swift in Sources */,
 				A5E93EBE26974EF700ED47CC /* User.swift in Sources */,
+				A5155F85269A0EB8008CEFBC /* AppView.swift in Sources */,
 				A5E93E8C269746D600ED47CC /* FancyTodoApp.swift in Sources */,
+				A5155F83269A0E80008CEFBC /* AuthView.swift in Sources */,
+				A57CB758269804220014C07E /* CustomTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,6 +630,7 @@
 		};
 		A5E93EAE269746D800ED47CC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F40E4D17604D2EF0A893AF7F /* Pods-FancyTodo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -464,15 +645,17 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = sundayx.fancytodo;
+				PRODUCT_BUNDLE_IDENTIFIER = sundayexplore.fancytodo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_WORKSPACE = YES;
 			};
 			name = Debug;
 		};
 		A5E93EAF269746D800ED47CC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4C94B658AB3603EEF7773B2 /* Pods-FancyTodo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -487,15 +670,17 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = sundayx.fancytodo;
+				PRODUCT_BUNDLE_IDENTIFIER = sundayexplore.fancytodo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_WORKSPACE = YES;
 			};
 			name = Release;
 		};
 		A5E93EB1269746D800ED47CC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2B3F8ECFC294052354FC82C /* Pods-FancyTodoTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -518,6 +703,7 @@
 		};
 		A5E93EB2269746D800ED47CC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE229572C0E905056B574CDF /* Pods-FancyTodoTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -540,6 +726,7 @@
 		};
 		A5E93EB4269746D800ED47CC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EDC6111D916B608D64A83F0 /* Pods-FancyTodo-FancyTodoUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -560,6 +747,7 @@
 		};
 		A5E93EB5269746D800ED47CC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E39E4BC0A082F8BB21B3FEA1 /* Pods-FancyTodo-FancyTodoUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
