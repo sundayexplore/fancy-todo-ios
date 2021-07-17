@@ -12,7 +12,7 @@ struct FancyTodoApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environmentObject(AuthViewModel())
+                .environmentObject(Auth())
         }
     }
 }

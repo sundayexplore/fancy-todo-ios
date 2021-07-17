@@ -8,24 +8,23 @@
 import SwiftUI
 
 struct ContentView: View {
-    @EnvironmentObject private var authVM: AuthViewModel
+    @EnvironmentObject var auth: Auth
     
     func sync() {
         AuthService().sync() { result in
             switch result {
             case .success(let data):
-                authVM.user = data.user
+                auth.user = data.user
                 
-            case .failure(let err):
-                print(err.localizedDescription)
-                authVM.user = nil
+            case .failure:
+                auth.user = nil
             }
         }
     }
     
     var body: some View {
         NavigationView{
-            if authVM.user != nil {
+            if auth.user != nil {
                 AppView()
             } else {
                 AuthView()
@@ -40,6 +39,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-            .environmentObject(AuthViewModel())
+            .environmentObject(Auth())
     }
 }

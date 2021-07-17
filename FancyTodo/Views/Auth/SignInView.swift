@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct SignInView: View {
-    @EnvironmentObject private var authVM: AuthViewModel
-    @State private var email: String = ""
-    @State private var password: String = ""
-    @State private var focusable: [Bool] = [false, false]
-    @State private var isSecureTextEntry: Bool = true
+    @EnvironmentObject var auth: Auth
+    @State var email: String = ""
+    @State var password: String = ""
+    @State var focusable: [Bool] = [false, false]
+    @State var isSecureTextEntry: Bool = true
     
     func signIn() {
         let defaults = UserDefaults.standard
@@ -22,7 +22,7 @@ struct SignInView: View {
             case .success(let data):
                 defaults.setValue(data.act, forKey: "act")
                 defaults.setValue(data.rft, forKey: "rft")
-                authVM.user = data.user
+                self.auth.user = data.user
                 
             case .failure(let err):
                 print(err.localizedDescription)
@@ -68,7 +68,7 @@ struct SignInView: View {
 struct SignIn_Previews: PreviewProvider {
     static var previews: some View {
         SignInView()
-            .environmentObject(AuthViewModel())
+            .environmentObject(Auth())
     }
 }
 
