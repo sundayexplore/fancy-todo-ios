@@ -5,60 +5,27 @@
 //  Created by Adam Rafiandri on 7/10/21.
 //
 
+import Foundation
 import SwiftUI
 
-struct SignUpView: View {
-    @EnvironmentObject private var authVM: AuthViewModel
-    @State private var name: String = ""
-    @State private var email: String  = ""
-    @State private var password: String = ""
-    @State private var focusable: [Bool] = [false, false, false]
-    @State private var isSecureTextEntry: Bool = true
-    
-    func signUp() {
-        let defaults = UserDefaults.standard
-        
-        AuthService().signUp(name: name, email: email, password: password) { result in
-            switch result {
-            case .success(let data):
-                defaults.setValue(data.act, forKey: "act")
-                defaults.setValue(data.rft, forKey: "rft")
-                authVM.user = data.user
-                
-            case .failure(let err):
-                print(err.localizedDescription)
-            }
-        }
-    }
+class SignUpData: ObservableObject {
+    @Published var name: String = ""
+    @Published var email: String = ""
+    @Published var password: String = ""
+}
+
+struct SignUpEmailView: View {
+    @ObservedObject var data: SignUpData
     
     var body: some View {
-        NavigationView {
-            Form {
-                VStack {
-                    CustomTextField(
-                        label: "Email",
-                        text: $email,
-                        focusable: $focusable,
-                        returnKeyType: .next,
-                        tag: 0
-                    )
-                    .padding()
-                    .frame(height: 48)
-                    
-                    CustomTextField (
-                        label: "Password",
-                        text: $password,
-                        focusable: $focusable,
-                        isSecureTextEntry: $isSecureTextEntry,
-                        returnKeyType: .done,
-                        tag: 1
-                    )
-                    .padding()
-                    .frame(height: 48)
-                    
-                    Button("Continue") {
-                        signUp()
-                    }
+        VStack {
+            TextField("Email", text: $data.email)
+            
+            NavigationLink(destination: SignUpNamePasswordView(data: self.data)) {
+                HStack {
+                    Spacer()
+                    Text("Sign up with email")
+                    Spacer()
                 }
             }
         }
@@ -66,9 +33,56 @@ struct SignUpView: View {
     }
 }
 
+struct SignUpNamePasswordView: View {
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    @ObservedObject var data: SignUpData
+    
+    var backButton: some View {
+        Button(action: { self.presentationMode.wrappedValue.dismiss() } ) {
+            HStack {
+                Image(systemName: "chevron.backward")
+                    .aspectRatio(contentMode: .fit)
+                Text(data.email)
+                    .fontWeight(.regular)
+            }
+        }
+    }
+    
+    var body: some View {
+        Text(data.email)
+            .navigationTitle("Almost there")
+            .navigationBarBackButtonHidden(true)
+            .navigationBarItems(leading: self.backButton)
+    }
+}
+
+struct SignUpView: View {
+    @ObservedObject var data: SignUpData = SignUpData()
+    //    @EnvironmentObject private var authVM: AuthViewModel
+    
+    //    func signUp() {
+    //        let defaults = UserDefaults.standard
+    //
+    //        AuthService().signUp(name: name, email: email, password: password) { result in
+    //            switch result {
+    //            case .success(let data):
+    //                defaults.setValue(data.act, forKey: "act")
+    //                defaults.setValue(data.rft, forKey: "rft")
+    //                authVM.user = data.user
+    //
+    //            case .failure(let err):
+    //                print(err.localizedDescription)
+    //            }
+    //        }
+    //    }
+    
+    var body: some View {
+        SignUpEmailView(data: self.data)
+    }
+}
+
 struct SignUpView_Previews: PreviewProvider {
     static var previews: some View {
         SignUpView()
-            .environmentObject(AuthViewModel())
     }
 }

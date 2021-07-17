@@ -9,25 +9,23 @@ import SwiftUI
 
 struct AuthView: View {
     var body: some View {
-        NavigationView {
-            VStack(alignment: .center, spacing: 200) {
-                Text("Fancy Todo")
-                    .bold()
-                    .font(.largeTitle)
-                
-                VStack {
-                    NavigationLink(destination: SignInView()) {
-                        HStack {
-                            Image(systemName: "envelope")
-                                .font(.callout)
-                            Text("Continue with email")
-                                .fontWeight(.semibold)
-                                .font(.callout)
-                        }
-                        .foregroundColor(Color.black)
-                        .padding()
-                        .border(Color.black, width: 2)
+        VStack(alignment: .center, spacing: 200) {
+            Text("Fancy Todo")
+                .bold()
+                .font(.largeTitle)
+            
+            VStack {
+                NavigationLink(destination: SignUpView()) {
+                    HStack {
+                        Image(systemName: "envelope")
+                            .font(.callout)
+                        Text("Continue with email")
+                            .fontWeight(.semibold)
+                            .font(.callout)
                     }
+                    .foregroundColor(Color.black)
+                    .padding()
+                    .border(Color.black, width: 2)
                 }
             }
         }
